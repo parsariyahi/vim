@@ -118,6 +118,8 @@ nnoremap <leader>w :w!<CR>
 nnoremap <leader>q :q!<CR>
 nnoremap <Leader>b :Buffers<CR>
 nnoremap <Leader>bd :bd<CR>
+nnoremap <silent> <leader>o :<C-u>call append(line("."),   repeat([""], v:count1))<CR>
+nnoremap <silent> <leader>O :<C-u>call append(line(".")-1, repeat([""], v:count1))<CR>
 
 inoremap <silent><expr> <TAB>
       \ pumvisble() ? "\<C-n>" :
